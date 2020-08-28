@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build ",
+    "build": "ng build --prod --build-optimizer && python3 pythonApp/setup.py install",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -42,5 +42,9 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.9.5"
+  },
+  "flaskConfig": {
+    "templatePath": "pythonApp/Resources/templates",
+    "staticPath": "pythonApp/Resources/static"
   }
 }
