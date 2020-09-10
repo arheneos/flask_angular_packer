@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --build-optimizer && python3 pythonApp/setup.py install",
+    "build": "ng build --prod --build-optimizer && python3 pythonApp/setup.py",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -45,6 +45,15 @@
   },
   "flaskConfig": {
     "templatePath": "pythonApp/Resources/templates",
-    "staticPath": "pythonApp/Resources/static"
+    "staticPath": "pythonApp/Resources/static",
+    "port": [
+      8000
+    ],
+    "host": "localhost",
+    "domain": ""
+  },
+  "pythonConfig": {
+    "username": "NutShellBox",
+    "email": "nutshellbox.public@gmail.com"
   }
 }
